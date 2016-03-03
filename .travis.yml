@@ -9,21 +9,12 @@ branches:
     # NOT change the REGEX for v.#.#.# tags
     # If you change the REGEX, plz, update TravisTagTest with the REGEX, and keep tests passing
 
+env:
   matrix:
     - COMPILE_METHOD=World
     - COMPILE_METHOD=Universe
     - COMPILE_METHOD=Barcelona
     - COMPILE_METHOD=Planet
     - COMPILE_METHOD=Schibsted
-
-sudo: required
-
-jdk:
-  - oraclejdk8
-
-install: true
-
-before_script:
-  - sudo apt-get update && sudo apt-get install oracle-java8-installer
 
 script: echo $COMPILE_METHOD
