@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo Deploying: $COMPILE_METHOD
+echo $COMPILE_METHOD
 
 # Will exit with status of last command.
 
