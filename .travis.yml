@@ -18,3 +18,9 @@ env:
     - COMPILE_METHOD=Schibsted
 
 script: echo $COMPILE_METHOD
+
+deploy:
+  provider: script
+  script: ./exec.sh
+  on:
+    tags: true
