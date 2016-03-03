@@ -2,6 +2,7 @@ language: generic
 
 branches:
   only:
+    - master
     - develop
     - /^release-.*$/
     - /^v\.\d\.\d\.\d$/
